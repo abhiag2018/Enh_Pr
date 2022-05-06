@@ -1,0 +1,4 @@
+regelem,main,background
+enhancer,mm10-enh-pr/enhancer.mm10.bed,mm10-enh-pr/enhancer_bg.mm10.bed
+promoter,mm10-enh-pr/promoter.mm10.bed,mm10-enh-pr/promoter_bg.mm10.bed
+brutePairs,mm10-enh-pr/pairs_bruteForce.mm10.csv,

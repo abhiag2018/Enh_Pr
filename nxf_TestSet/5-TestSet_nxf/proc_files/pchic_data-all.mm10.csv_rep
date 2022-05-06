@@ -1,0 +1,9 @@
+celltype,label,hic
+type66,2-train,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/ORSAM17820.score.train.intgr.csv
+type66,2-test,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/ORSAM17820.score.test.intgr.csv
+type66,2-val,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/ORSAM17820.score.val.intgr.csv
+type66,2-left-overs,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/ORSAM17820.score.left-overs.intgr.csv
+type66,1-train,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/ORSAM17821.score.train.intgr.csv
+type66,1-test,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/ORSAM17821.score.test.intgr.csv
+type66,1-val,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/ORSAM17821.score.val.intgr.csv
+type66,1-left-overs,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/ORSAM17821.score.left-overs.intgr.csv
