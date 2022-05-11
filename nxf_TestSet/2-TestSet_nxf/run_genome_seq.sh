@@ -20,7 +20,7 @@ nextflow -C $inp_config1 \
 	run $basedir/genome-seq-prep.nf \
 	--refgen $refgen \
 	-profile slurm \
-	-w "/fastscratch/agarwa/nf-tmp/work" -with-timeline \
+	-w "./work" -with-timeline \
 	"$@"
 	# -resume
 	# --dev 
