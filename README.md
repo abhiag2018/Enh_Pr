@@ -17,6 +17,15 @@ Using the DeepTact pipeline we want to predict the relation between a promoter-e
 
 The pipeline is built such that it can be modified easily to create multiple output datasets with lego-like modularity for input datasets. To that end we have seperated the pipeline into 5 steps. Steps 1 and 2 generate only species specific features and can be completely generated given the reference genome. Step 3 and Step 4 require .bam and ChiCAGO processed .tsv files as input, respectively. Step 5 combines all the steps above tp generate hdf5 dataset for input to the Neural Network.
 
+Run the pipeline inside an environment with nextflow, & python. To run the steps with the nextflow pipeilne run the 5 `run_*.sh` scripts, after setting a few key parameters in the run scripts and .config files:
+- Nextflow temporary work directory in `*-TestSet_nxf/run_*.sh`
+- Dataset paths for reference genome files in `pr-enh-prep.config` in `params.genomes`
+- Dataset paths for the aligned .bam ATAC-seq/DNase-seq files in `co-score-prep.config` in `params.bamInput`
+- Dataset paths for the ChICAGO processes PCHiC input files in `pchic-prep.config` in `params.hic_input`
+
+Modify the following .config files to change the output dataset parameters : `nxf_TestSet/{1,2,3,4,5}-TestSet_nxf/conf/*.config`. To modify the nextflow computation options modify the parameters in : `nxf_TestSet/{1,2,3,4,5}-TestSet_nxf/nextflow.config`.
+
+
 ## Step1: Promoter and Enhancer Lists
 
 Pipeline produces the species specific .bed files with lists of both regulatory elements, with lengths `promoter_window/enhancer_window + augment_length` & `bgWindow` : promoters and enhancers. It also generates a .bed file containing comprehensive list of all promoter-enhancer pairs within `max_dist_pr_enh` distance in all chrommosomes.
@@ -30,13 +39,13 @@ run: ` ./run_pr_enh.sh -resume `
 
 filename : `pr-enh-prep.config`
 
-* **dataDir**: path to species specific datasets -- used inside `params.genomes`
-* **refgen** : reference genome for processing  
-* **bgWindow**: length of background window for normalization and in Chromatin Openness Score calculation
-* **augment_length**: length of augmentation of promoter and enhancer window for data augmentation
-* **augment_step**: step size for moving window for data augmentation
-* **promoter_window, enhancer_window**: promoter/enhancer window size
-* **max_dist_pr_enh**: max distance between brute force generated promoter-enhancer pairs
+Sample p **dataDir**: path to species specific datasets -- used inside `params.genomes`
+* **refgen** : reference genome for processing  : mm10, hg18, hg38
+* **bgWindow**: length of background window for normalization and in Chromatin Openness Score calculation (default: 1e6)
+* **augment_length**: length of augmentation of promoter and enhancer window for data augmentation (default: 1000)
+* **augment_step**: step size for moving window for data augmentation (default: 50)
+* **promoter_window, enhancer_window**: promoter/enhancer window size (default: 1000 & 2000 respectively)
+* **max_dist_pr_enh**: max distance between brute force generated promoter-enhancer pairs  (default: 1e6)
 * **all_chrom**: chromosome list for the selected species
 * **species**['\<key\>']: : chromosome list for the species corresponding to *\<key\>*  
 * **genomes**: Dataset files for reference genomes  
@@ -148,7 +157,7 @@ Parameters to generate the features for all promoter-enhancer pairs without data
   split = []//all
 ```
 
-Parameters to generate the features for all promoter-enhancer pairs with 0.6 data augmentation:
+Sample parameters to generate the features for all promoter-enhancer pairs with data augmentation:
 ```      
     hic_augment_factor = 20 
     neg_pos_interac_ratio = 4 
