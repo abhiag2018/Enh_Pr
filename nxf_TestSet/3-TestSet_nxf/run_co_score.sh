@@ -11,10 +11,6 @@ NXF_OPTS='-Xms16g -Xmx64g'
 
 
 basedir="../nxf-scripts"
-configdir="$basedir/config_hg38_mm10"
-# cp $configdir/co-score-prep.config .
-# cp $configdir/pr-enh-prep.config .
-# cp $basedir/nextflow-1.config nextflow.config
 
 refgen="mm10"
 inp_config1="nextflow.config"
@@ -25,7 +21,7 @@ nextflow -C $inp_config1 \
 	-C $inp_config2 \
 	-C $inp_config3 \
 	run $basedir/co-score-prep.nf \
-	-profile slurm -w "/fastscratch/agarwa/nf-tmp/work" -with-timeline \
+	-profile slurm -w "./work" -with-timeline \
 	--refgen $refgen \
 	"$@"
 	# -resume \
