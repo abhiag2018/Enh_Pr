@@ -1,7 +1,7 @@
 celltype,repetition,bam
-ORSAM2368,1,/projects/li-lab/agarwa/CUBE/DeepTact/dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1011-G_GT20_03864_TAAGGCGA-AAGGCTAT_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
-ORSAM2296,1,/projects/li-lab/agarwa/CUBE/DeepTact/dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1011-I_GT20_03792_GTAGAGGA-CTAAGCCT_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
-ORSAM2320,1,/projects/li-lab/agarwa/CUBE/DeepTact/dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1011-L_GT20_03816_TACGCTGC-AAGGAGTA_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
-ORSAM2346,1,/projects/li-lab/agarwa/CUBE/DeepTact/dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1012-A_GT20_03842_CCTAAGAC-GTAAGGAG_S56_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
-ORSAM2370,1,/projects/li-lab/agarwa/CUBE/DeepTact/dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1012-G_GT20_03866_TAAGGCGA-TTATGCGA_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
-ORSAM2298,1,/projects/li-lab/agarwa/CUBE/DeepTact/dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1012-I_GT20_03794_GTAGAGGA-TCTCTCCG_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
+ORSAM2368,1,../..//dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1011-G_GT20_03864_TAAGGCGA-AAGGCTAT_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
+ORSAM2296,1,../..//dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1011-I_GT20_03792_GTAGAGGA-CTAAGCCT_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
+ORSAM2320,1,../..//dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1011-L_GT20_03816_TACGCTGC-AAGGAGTA_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
+ORSAM2346,1,../../dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1012-A_GT20_03842_CCTAAGAC-GTAAGGAG_S56_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
+ORSAM2370,1,../..//dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1012-G_GT20_03866_TAAGGCGA-TTATGCGA_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
+ORSAM2298,1,../..//dataset/ATAC-Seq/CUBE/ATAC_Seq_BAMs/1012-I_GT20_03794_GTAGAGGA-TCTCTCCG_cat.sorted.rmDup.rmChrM.rmMulti.filtered.shifted.mm10.bam
