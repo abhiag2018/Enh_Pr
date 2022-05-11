@@ -1,7 +1,7 @@
 celltype,repetition,regelem,h5
-type66,1,enhancer,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/enhancer_COscore.type66.rep1.h5.gz
-type66,2,enhancer,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/enhancer_COscore.type66.rep2.h5.gz
-type66,3,enhancer,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/enhancer_COscore.type66.rep3.h5.gz
-type66,1,promoter,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/promoter_COscore.type66.rep1.h5.gz
-type66,2,promoter,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/promoter_COscore.type66.rep2.h5.gz
-type66,3,promoter,/projects/li-lab/agarwa/CUBE/DeepTact/DeepTact-Pipeline/exec_dir/TestSet/nxf_TestSet/nxf-scripts/mm10-enh-pr/promoter_COscore.type66.rep3.h5.gz
+type66,1,enhancer,../nxf-scripts/mm10-enh-pr/enhancer_COscore.type66.rep1.h5.gz
+type66,2,enhancer,../nxf-scripts/mm10-enh-pr/enhancer_COscore.type66.rep2.h5.gz
+type66,3,enhancer,../nxf-scripts/mm10-enh-pr/enhancer_COscore.type66.rep3.h5.gz
+type66,1,promoter,../nxf-scripts/mm10-enh-pr/promoter_COscore.type66.rep1.h5.gz
+type66,2,promoter,../nxf-scripts/mm10-enh-pr/promoter_COscore.type66.rep2.h5.gz
+type66,3,promoter,../nxf-scripts/mm10-enh-pr/promoter_COscore.type66.rep3.h5.gz
