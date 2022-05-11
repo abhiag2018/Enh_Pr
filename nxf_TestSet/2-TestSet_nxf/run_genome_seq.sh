@@ -8,11 +8,6 @@ conda activate cube
 
 ###
 
-# configdir="$basedir/config_hg38_mm10"
-# cp $configdir/genome-seq-prep.config .
-# cp $configdir/pr-enh-prep.config .
-# cp $basedir/nextflow-1.config nextflow.config
-
 refgen="mm10"
 inp_config1="nextflow.config"
 inp_config2="conf/genome-seq-prep.config"
