@@ -9,11 +9,8 @@ conda activate cube
 ###
 NXF_OPTS='-Xms16g -Xmx64g'
 
-alias hic="cd ../pchic_mouse_cube/"
-alias wd="cd `pwd`"
 basedir="../nxf-scripts"
 refgen="mm10"
-#chunks=11
 
 inp_config1="nextflow.config"
 inp_config2="conf/feature-prep.config"
@@ -24,7 +21,7 @@ nextflow -C $inp_config1 \
 	-C $inp_config3 \
 	run $basedir/NN-feature-prep.nf \
 	-profile slurm \
-	-w "/fastscratch/agarwa/nf-tmp/work" -with-timeline \
+	-w "./work" -with-timeline \
 	--refgen $refgen \
 	"$@"
 	# -resume ${resumeID}
