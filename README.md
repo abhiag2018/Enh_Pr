@@ -15,9 +15,9 @@ Run the following command `scriptGPU.sh train type66 3`, preferably with GPU acc
 
 Using the DeepTact pipeline we want to predict the relation between a promoter-enhancer pair using input features corresponding to Chromatin Openness and training labels generated from promoter capture Hi-C data. The input features for the Chromatin Openness score can be generated from either ATAC-seq/Dnase-seq data. 
 
-The pipeline is built such that it can be modified easily to create multiple output datasets with lego-like modularity for input datasets. To that end we have seperated the pipeline into 5 steps. Steps 1 and 2 generate only species specific features and can be completely generated given the reference genome. Step 3 and Step 4 require .bam and ChiCAGO processed .tsv files as input, respectively. Step 5 combines all the steps above tp generate hdf5 dataset for input to the Neural Network.
+The pipeline is built such that it can be modified easily to create multiple output datasets with lego-like modularity for input datasets. To that end we have seperated the pipeline into 5 steps. Steps 1 and 2 generate only species specific features and can be completely generated given the reference genome. Step 3 and Step 4 require .bam and ChiCAGO processed .tsv files as input, respectively. Step 5 combines all the steps above to generate hdf5 dataset for input to the Neural Network.
 
-Run the pipeline inside an environment with nextflow, & python. To run the test script above, run the nextflow pipeilne in the 5 `run_*.sh` scripts. The input dataset files are the following:
+Run the pipeline inside an environment with nextflow, & python. To run the test script above, run the nextflow pipeilne in the 5 `nxf_TestSet/5-TestSet_nxf/run_*.sh` scripts. The input dataset files are the following:
 - Dataset paths for reference genome files in `pr-enh-prep.config` in `params.genomes`
 - Dataset paths for the aligned .bam ATAC-seq/DNase-seq files in `co-score-prep.config` in `params.bamInput`
 - Dataset paths for the ChICAGO processes PCHiC input files in `pchic-prep.config` in `params.hic_input`
